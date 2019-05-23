@@ -17,7 +17,7 @@ a.card:hover {
 </form>
 <div class="row">
     {% for mypage in site.pages %}
-    {% if page.dir == "/tutorials/" %}
+    {% if mypage.dir == "/tutorials/" %}
     <div class="col-lg-4 col-sm-6">
         <a class="card" href="{{ site.url }}{{ mypage.url }}" style="margin-bottom:20px;">
             <div class="card-body">
