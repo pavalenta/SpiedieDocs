@@ -1,0 +1,29 @@
+---
+title: "Welcome to Spiedie Docs!"
+layout: default
+---
+
+<style>
+a.card {
+    color: #212529;
+}
+a.card:hover {
+    color: #212529;
+    text-decoration: none;
+}
+</style>
+<form class="form-group">
+    <input class="form-control mr-sm-2 docs_search" type="search" placeholder="Search Docs" aria-label="Search Docs">
+</form>
+<div class="row">
+    {% for mypage in site.pages %}
+    <div class="col-lg-4 col-sm-6">
+        <a class="card" href="{{ site.url }}{{ mypage.url }}" style="margin-bottom:20px;">
+            <div class="card-body">
+                <h5 class="card-title">{{ mypage.title }}</h5>
+                <p class="card-text">{{ mypage.content | strip_html | slice:0,150 }} ...</p>
+            </div>
+        </a>
+    </div>
+    {% endfor %}
+</div>
