@@ -11,7 +11,7 @@ This is how you do things:
 3. Finally, you do the last thing
 
 ```html
-Here is some code
+Here is some <a href="#">code</a>
 ```
 
   
