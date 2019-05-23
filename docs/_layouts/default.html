@@ -62,7 +62,7 @@
             <div class="card-header">
               <form>
                 <div class="form-group" style="margin:0px;">
-                  <input type="text" class="form-control docs_search" placeholder="Search Recipes">
+                  <input type="text" class="form-control docs_search" placeholder="Search Documentation">
                 </div>
               </form>
             </div>
@@ -125,7 +125,7 @@
     <script src="{{ site.url }}/assets/js/jquery.autocomplete.js"></script>
     <script>
       var docs_arr = [
-      {% for page in site.pages %}{% if page.dir == "/recipes/" %}{
+      {% for page in site.pages %}{% if page.dir == "/tutorials/" %}{
         "url":`{{ page.url }}`,
         "value":{% if page.title == blank %} `{{ page.name }}` {% else %} `{{ page.title }}` {% endif %}
       },{% endif %}{% endfor %}
