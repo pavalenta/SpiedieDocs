@@ -28,7 +28,8 @@
       .autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
       .autocomplete-group { padding: 2px 5px; }
       .autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
-      div.highlight {
+      div.highlight { background: #FFF; }
+      pre.highlight {
         padding: 10px;
         border-radius: 10px;
         border-width: 10px;
@@ -36,7 +37,6 @@
         border: solid;
         background: #f8f8f8;
       }
-
     </style>
 
 
@@ -78,11 +78,11 @@
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
                 {% for tag in all_tags %}
-                  <a class="badge badge-info" href="{{ site.url }}/tags#{{ tag | slugify }}">{{ tag }}</a>
+                  <a class="badge badge-primary" href="{{ site.url }}/tags#{{ tag | slugify }}">{{ tag }}</a>
                 {% endfor %}
               </li>
               <li class="list-group-item" style="padding: 0px;">
-                <a class="badge badge-info" href="https://github.com/BinghamtonUniversity/SpiedieDocs/edit/master/docs/{{ page.path }}" style="width:100%;font-size:20px;border-top-left-radius:0;border-top-right-radius:0;">
+                <a class="badge badge-info" href="https://github.com/BinghamtonUniversity/SpiedieDocs/edit/master/docs/{{ page.path }}" style="width:100%;font-size:16px;border-top-left-radius:0;border-top-right-radius:0;">
                   Edit This Page
                 </a>
               </li>
