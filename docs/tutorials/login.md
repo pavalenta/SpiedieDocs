@@ -59,7 +59,7 @@ Caption: Logged in session
 
 ***Note: Take the following steps if logging in from off-campus***
 
-#### <a name="windwos_vpn"></a> Install Pulse Secure VPN
+#### <a name="windows_vpn"></a> Install Pulse Secure VPN
 
 1. Go to [ssl.binghamton.edu](https://ssl.binghamton.edu) and log in using your PODS DOMAIN ID and follow the steps to install Pulse Secure for Windows 
 
