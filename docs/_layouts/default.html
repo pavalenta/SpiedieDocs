@@ -34,9 +34,7 @@
         padding: 10px;
         border-radius: 10px;
         border-width: 10px;
-        border-color: #f8f8f8;
-        border: solid;
-        background: #f8f8f8;
+        background: #ddd;
       }
       .badge-primary {
         background-color: #004333;
@@ -109,7 +107,7 @@
           </div>
         </div>
         <div class="col-md-8 col-lg-9">
-          <h1 style="margin-top:10px;">{% if page.title == blank %} {{ page.name }} {% else %} {{ page.title }} {% endif %}</h1>
+          <h1 style="padding: 10px;background: #0000009e;margin: 0px -15px 10px -15px;color: white;">{% if page.title == blank %} {{ page.name }} {% else %} {{ page.title }} {% endif %}</h1>
           {% if page.images | pop != blank and page.images | pop != "" %}
           <div style="float:right;padding:20px 0px 0px 20px;width:320px;" class="d-none d-lg-block">
             {% for image in page.images %}
