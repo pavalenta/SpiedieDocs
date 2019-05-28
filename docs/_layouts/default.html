@@ -49,7 +49,7 @@
 
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background-color:#004333 !important;">
-      <a class="navbar-brand" href="{{ site.url }}" style="font-size: 27px;padding: 0px;"><i class="bu bu-b" style="font-size:24px;"></i>&nbsp; Spiedie Docs</a>
+      <a class="navbar-brand" href="{{ site.url }}" style="font-size: 27px;padding: 0px;"><i class="bu bu-b" style="font-size:24px;"></i>&nbsp;&nbsp; Spiedie Docs</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -57,7 +57,7 @@
         <ul class="navbar-nav mr-auto">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fa fa-tags"></i> Tags
+                <i class="fa fa-tags"></i>&nbsp; Tags
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="height: auto; max-height: 400px; overflow-x: hidden;">
                 {% for tag in all_tags %}
@@ -86,7 +86,7 @@
             <ul class="list-group list-group-flush">
               <li class="list-group-item" style="background:rgb(0,90,67);">
                 {% for tag in all_tags %}
-                  <a class="badge badge-primary" href="{{ site.url }}/tags#{{ tag | slugify }}"><i class="fa fa-tag"></i> {{ tag }}</a>
+                  <a class="badge badge-primary" href="{{ site.url }}/tags#{{ tag | slugify }}"><i class="fa fa-tag"></i>&nbsp; {{ tag }}</a>
                 {% endfor %}
               </li>
               <li class="list-group-item" style="background:rgb(0,90,67);">
@@ -94,14 +94,14 @@
                 {% for mypage in site.pages limit:5 %}
                 {% if mypage.dir == "/tutorials/" %}
                   <a class="badge badge-primary" href="{{ site.url }}{{ mypage.url }}" style="width:100%;">
-                    <i class="fa fa-file"></i> {{ mypage.title }}
+                    <i class="fa fa-file"></i>&nbsp; {{ mypage.title }}
                   </a>
                 {% endif %}
                 {% endfor %}            
               </li>
               <li class="list-group-item" style="background:rgb(0,90,67);">
                 <a class="badge badge-primary" href="https://github.com/BinghamtonUniversity/SpiedieDocs/edit/master/docs/{{ page.path }}" style="width:100%;">
-                  <i class="fa fa-pencil"></i> Edit This Page
+                  <i class="fa fa-pencil-alt"></i>&nbsp; Edit This Page
                 </a>
               </li>
             </ul>
