@@ -12,6 +12,7 @@
     <title>{{ page.title }} | Spiedie | Binghamton University</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ site.url }}/assets/css/pygments.css">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/bingfont.css">
     <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css"> -->
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -40,8 +41,8 @@
     </style>
 
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="{{ site.url }}">Spiedie Docs</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background-color:#004333">
+      <a class="navbar-brand" href="{{ site.url }}"><i class="bu bu-b"></i> Spiedie Docs</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -64,11 +65,11 @@
       </div>
     </nav>
 
-    <div class="container-fluid" style="margin-top:70px;">
+    <div class="container-fluid" style="margin-top:56px;">
       <div class="row">
-        <div class="col-md-4 col-lg-3 d-none d-md-block">
-          <div class="card">
-            <div class="card-header">
+        <div class="col-md-4 col-lg-3 d-none d-md-block" style="padding:0px;">
+          <div class="card" style="border:0px;">
+            <div class="card-header" style="background-color:rgb(0,90,67);border-radius:0px;">
               <form>
                 <div class="form-group" style="margin:0px;">
                   <input type="text" class="form-control docs_search" placeholder="Search Documentation">
@@ -81,8 +82,8 @@
                   <a class="badge badge-primary" href="{{ site.url }}/tags#{{ tag | slugify }}">{{ tag }}</a>
                 {% endfor %}
               </li>
-              <li class="list-group-item" style="padding: 0px;">
-                <a class="badge badge-info" href="https://github.com/BinghamtonUniversity/SpiedieDocs/edit/master/docs/{{ page.path }}" style="width:100%;font-size:16px;border-top-left-radius:0;border-top-right-radius:0;">
+              <li class="list-group-item" style="padding:0px;background:rgb(0,90,67);">
+                <a class="badge badge-info" href="https://github.com/BinghamtonUniversity/SpiedieDocs/edit/master/docs/{{ page.path }}" style="width:100%;font-size:16px;border-top-left-radius:0;border-top-right-radius:0;background-color:#004333;">
                   Edit This Page
                 </a>
               </li>
