@@ -3,6 +3,7 @@ title: A Quick Introdcution to Spiedie
 layout: default 
 images: []
 tags: []
+description: Welcome to Spiedie and Binghamton University. Glance through here to learn about computer clusters and Spiedie's computing capabilities. 
 ---
 
 ### Table of Contents 

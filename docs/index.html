@@ -37,7 +37,7 @@ a.card:hover {
         <a class="card" href="{{ site.url }}{{ mypage.url }}" style="margin-bottom:20px;">
             <div class="card-body">
                 <h5 class="card-title">{{ mypage.title }}</h5>
-                <p class="card-text">{{ mypage.content | strip_html | slice:0,150 }} ...</p>
+                <p class="card-text">{{ mypage.description | mypage.content | strip_html   }} ...</p>
             </div>
         </a>
     </div>

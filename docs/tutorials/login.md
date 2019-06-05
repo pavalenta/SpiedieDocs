@@ -3,6 +3,7 @@ title: How to Connect to Cluster
 layout: default
 images: []
 tags: [Login, Setup, Configuration, Windows, Mac, Linux]
+description: How to log on to Spiedie from your personal cmoputer using various operating systems.
 ---
 
 ***

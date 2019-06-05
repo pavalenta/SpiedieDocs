@@ -2,5 +2,6 @@
 title: Using Singularity Containers on Spiedie (advanced)
 layout: default 
 images: [] 
-tags : []
+tags : [tutorial]
+description: How to use Singularity containers to run jobs on spiedie.
 --- 

@@ -3,6 +3,7 @@ title: Quick Start Tutorial - Python
 layout: default
 images: []
 tags: [Tutorial, Python, SLURM, Submit Job]
+description: A walkthrough on how to submit your first job on Spiedie!
 ---
 
 ***
