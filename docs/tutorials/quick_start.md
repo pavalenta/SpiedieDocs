@@ -46,7 +46,7 @@ Which will list all the files and directories in your Home directory.
 
 ***
 
-Before we go further, [download](quick_start.py) the python script we will be running. [There are various ways to transfer data to and from cluster.](data_transfer.html)
+Before we go further, [download](code/quick_start.py) the python script we will be running. [There are various ways to transfer data to and from cluster.](data_transfer.html)
 
 In this example we will be using SCP to transfer the data from our local machine to the quick_start directory located on the Spiedie server. 
 
@@ -103,6 +103,7 @@ This will send your job to the SLURM daemon to be allocated and then run on a qu
 We have directed the outputs of the program to the quick_start.log and quick_start_error.log and retained the control of the terminal. 
 
 [You can see a full explanation of the shell command here](https://explainshell.com/explain?cmd=srun+--partition%3Dquick+python3+quick_start.py+1%3Equick_start.log+2%3Equick_start_error.log+%26)
+
 
 ## Checking job status
 

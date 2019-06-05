@@ -11,10 +11,10 @@ The guides are designed to get users quickly running programs on the Spiedie Clu
 
 ### Tutoria Series: 
 1. [Quick Start - Python example (beginner)](quick_start.html)
-2. Mutli-core program - Python example (intermediate)
-3. Multi-core program - C++/OpenMPI example (intermediate)
-4. GPU Compute - CUDA example (advanced)
-5. Multi-node multi-core program  - MPI example (advanced)
-6. Containers on Spiedie - Singularity (advanced)
+2. [Mutli-core program - Python example (intermediate)](spiedie_multiprocessing.html)
+3. [Multi-core program - C++/OpenMPI example (intermediate)](spiedie_openmp_multi_core.html)
+4. [GPU Compute - CUDA example (advanced)](spiedie_gpu_compute.html)
+5. [Multi-node multi-core program  - MPI example (advanced)](spiedie_MPI.html)
+6. [Containers on Spiedie - Singularity (advanced)](spiedie_singularity.html)
 
 ***Note: We can further extend these to application specific examples for programs used by many userse (such as TensorFlow, PyTorch, MatLab, etc. ) to serve as a knowledge base***
